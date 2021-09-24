@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Redmi_AX6_AP
+name: new_Redmi_AX6_AP
 
 on:
   repository_dispatch:
