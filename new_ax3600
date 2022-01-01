@@ -31,12 +31,10 @@ CONFIG_DEFAULT_kmod-qca-wifi-unified-profile-64=y
 CONFIG_DEFAULT_kmod-shortcut-fe-64=y
 CONFIG_DEFAULT_kmod-shortcut-fe-cm-64=y
 CONFIG_DEFAULT_kmod-shortcut-fe-drv-64=y
-CONFIG_DEFAULT_kmod-ipv6=64=y
-CONFIG_DEFAULT_ip6tables-64=y
+CONFIG_DEFAULT_kmod-ipv6=y
+CONFIG_DEFAULT_ip6tables=y
 CONFIG_DEFAULT_isc-dhcp-relay-ipv4=y
 CONFIG_DEFAULT_isc-dhcp-relay-ipv6=y
-CONFIG_DEFAULT_kmod-bonding-64=y
-CONFIG_DEFAULT_kmod-qca-edma-64=y
 CONFIG_DEFAULT_kmod-gpio-button-hotplug=y
 CONFIG_DEFAULT_kmod-ipt-raw=y
 CONFIG_DEFAULT_kmod-leds-gpio=y
