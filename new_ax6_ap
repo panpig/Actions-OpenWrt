@@ -96,6 +96,7 @@ CONFIG_DEFAULT_luci-app-cpufreq=y
 CONFIG_PACKAGE_luci-app-guest-wifi=y
 CONFIG_PACKAGE_luci-app-ntpc=y
 CONFIG_PACKAGE_luci-app-openclash=y
+CONFIG_PACKAGE_luci-app-rp-pppoe-server=y
 CONFIG_PACKAGE_luci-app-qos=y
 CONFIG_PACKAGE_luci-app-sqm=y
 CONFIG_PACKAGE_luci-app-ttyd=y
