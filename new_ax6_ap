@@ -17,6 +17,7 @@ CONFIG_DEFAULT_kmod-qca-nss-drv-64=y
 CONFIG_DEFAULT_kmod-qca-nss-drv-pppoe-64=y
 CONFIG_DEFAULT_kmod-qca-nss-ecm-64=y
 CONFIG_DEFAULT_kmod-tun=y
+CONFIG_DEFAULT_ppp-mod-pptp=y
 CONFIG_DEFAULT_htop=y
 CONFIG_DEFAULT_kmod-gpio-button-hotplug=y
 CONFIG_DEFAULT_kmod-ipt-raw=y
