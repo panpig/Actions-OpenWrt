@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: AX6 Almighty Edition
+name: AX6-oc-1.7NPU-Boos
 
 on:
   repository_dispatch:
