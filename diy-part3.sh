@@ -1,5 +1,5 @@
 #!/bin/bash
-sed -i 's/192.168.1.1/192.168.50.253/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.50.254/g' package/base-files/files/bin/config_generate
 sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=65535' package/base-files/files/etc/sysctl.conf
 sed -i 's/$1$WplwC1t5$HBAtVXABp7XbvVjG4193B.:18753:0:99999:7/:0:0:99999:7/g' package/base-files/files/etc/shadow
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings
