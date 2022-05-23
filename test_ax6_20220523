@@ -15,7 +15,7 @@ CONFIG_DEFAULT_ath11k-firmware-ipq8074=y
 CONFIG_DEFAULT_htop=y
 CONFIG_PACKAGE_nano=y
 
-CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_Shortcut_FE_for_ECM is not set
+#CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_Shortcut_FE_for_ECM is not set
 CONFIG_PACKAGE_luci-app-turboacc=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING is not set
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_DRV is not set
