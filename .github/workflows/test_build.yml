@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: AX3600_DCJ
+name: test_ax6_build.config
 
 on:
   repository_dispatch:
