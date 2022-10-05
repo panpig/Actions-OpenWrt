@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: x86-64.test.conf
+name: x86-64.conf
 
 on:
   repository_dispatch:
