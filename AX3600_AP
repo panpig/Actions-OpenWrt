@@ -75,8 +75,9 @@ CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Client=y
 CONFIG_PACKAGE_luci-app-ssr-plus_INCLUDE_Shadowsocks_Libev_Server=y
 CONFIG_PACKAGE_luci-app-turboacc=y
 #CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_Shortcut_FE_for_ECM=y
-CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE=y
+#CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE=y
 #CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_SHORTCUT_FE_DRV=y
+CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_OFFLOADING
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_BBR_CCA=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_DNSFORWARDER=y
 CONFIG_PACKAGE_luci-app-turboacc_INCLUDE_DNSPROXY=y
