@@ -33,16 +33,16 @@ CONFIG_DEFAULT_htop=y
 #CONFIG_PACKAGE_kmod-qca-nss-ecm-64=y
 #CONFIG_PACKAGE_nss-firmware-ipq8074=y
 
-CONFIG_PACKAGE_dnsmasq=y
-CONFIG_PACKAGE_dnsmasq-full=y
-CONFIG_PACKAGE_dnsmasq_full_auth=y
-CONFIG_PACKAGE_dnsmasq_full_conntrack=y
-CONFIG_PACKAGE_dnsmasq_full_dhcp=y
-CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
-CONFIG_PACKAGE_dnsmasq_full_dnssec=y
-CONFIG_PACKAGE_dnsmasq_full_ipset=y
-CONFIG_PACKAGE_dnsmasq_full_noid=y
-CONFIG_PACKAGE_dnsmasq_full_tftp=y
+#CONFIG_PACKAGE_dnsmasq=y
+#CONFIG_PACKAGE_dnsmasq-full=y
+#CONFIG_PACKAGE_dnsmasq_full_auth=y
+#CONFIG_PACKAGE_dnsmasq_full_conntrack=y
+#CONFIG_PACKAGE_dnsmasq_full_dhcp=y
+#CONFIG_PACKAGE_dnsmasq_full_dhcpv6=y
+#CONFIG_PACKAGE_dnsmasq_full_dnssec=y
+#CONFIG_PACKAGE_dnsmasq_full_ipset=y
+#CONFIG_PACKAGE_dnsmasq_full_noid=y
+#CONFIG_PACKAGE_dnsmasq_full_tftp=y
 
 CONFIG_PACKAGE_luci-app-statistics=y
 CONFIG_PACKAGE_luci-app-advanced=y
