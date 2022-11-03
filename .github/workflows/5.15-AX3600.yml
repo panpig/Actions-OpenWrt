@@ -18,7 +18,7 @@ env:
   REPO_BRANCH: master
   CONFIG_FILE: AX_3600_5-15.config
   FEEDS_CONF: feeds.conf.default
-  DIY_SCRIPT: diy-ax6.sh
+  DIY_SCRIPT: diy-ax6-5.15.sh
   UPLOAD_BIN_DIR: false
   UPLOAD_FIRMWARE: true
   UPLOAD_COWTRANSFER: false
