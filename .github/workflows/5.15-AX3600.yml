@@ -6,7 +6,7 @@
 # https://github.com/P3TERX
 #===============================================
 
-name:  AX6编译robimarko版openwrt
+name:  AX_3600_5-15
 
 on:
   workflow_dispatch:
