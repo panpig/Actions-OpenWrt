@@ -11,10 +11,13 @@
 name: x86-64.conf
 
 on:
+  repository_dispatch:
   workflow_dispatch:
-  schedule:
-    - cron: '0 17 * * *'
-
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
