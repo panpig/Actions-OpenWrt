@@ -10,9 +10,7 @@
 # 修改默认IP
 # sed -i 's/192.168.1.1/10.10.10.10/g' package/base-files/files/bin/config_generate
 sed -i 's/192.168.1.1/192.168.50.254/g' package/base-files/files/bin/config_generate
-sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=5000000' package/base-files/files/etc/sysctl.conf
-sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=5000000' package/base-files/files/etc/sysctl.conf
-sed -i '/customized in this file/a net.core.somaxconn=65536' package/base-files/files/etc/sysctl.conf
+sed -i '/customized in this file/a net.netfilter.nf_conntrack_max=100000/base-files/files/etc/sysctl.conf
 sed -i '/customized in this file/a net.ipv4.udp_wmem_min=6553500' package/base-files/files/etc/sysctl.conf
 sed -i '/customized in this file/a net.ipv4.udp_rmem_min=6553600' package/base-files/files/etc/sysctl.conf
 sed -i '/customized in this file/a net.core.rmem_max=40960000' package/base-files/files/etc/sysctl.conf
