@@ -107,11 +107,6 @@ sed -i '/nlbwmon/a\uci commit nlbwmon' package/lean/default-settings/files/zzz-d
 # 调整 x86 型号只显示 CPU 型号
 sed -i 's/${g}.*/${a}${b}${c}${d}${e}${f}/g' package/lean/autocore/files/x86/autocore
 
-# 修改版本为编译日期
-date_version=$(date +"%y.%m.%d")
-orig_version=$(cat "package/lean/default-settings/files/zzz-default-settings" | grep DISTRIB_REVISION= | awk -F "'" '{print $2}')
-sed -i "s/${orig_version}/R${date_version} by Yumekai/g" package/lean/default-settings/files/zzz-default-settings
-
 # 删除主题强制默认
 find package/luci-theme-*/* -type f -name '*luci-theme-*' -print -exec sed -i '/set luci.main.mediaurlbase/d' {} \;
 
@@ -119,3 +114,6 @@ find package/luci-theme-*/* -type f -name '*luci-theme-*' -print -exec sed -i '/
 sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-v2ray-server/luasrc/controller/*.lua
 sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-v2ray-server/luasrc/model/cbi/v2ray_server/*.lua
 sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-v2ray-server/luasrc/view/v2ray_server/*.htm
+
+./scripts/feeds update -a
+./scripts/feeds install -a
