@@ -17,6 +17,9 @@ sed -i '/customized in this file/a net.core.wmem_max=40960000' package/base-file
 sed -i '/customized in this file/a net.core.wmem_default=40960000' package/base-files/files/etc/sysctl.conf
 sed -i '/customized in this file/a net.core.rmem_default=40960000' package/base-files/files/etc/sysctl.conf
 
+# Change default shell to zsh
+# sed -i 's/\/bin\/ash/\/usr\/bin\/zsh/g' package/base-files/files/etc/passwd
+
 # 移除重复软件包
 rm -rf feeds/packages/net/mosdns
 rm -rf feeds/luci/themes/luci-theme-argon
@@ -108,6 +111,7 @@ svn co https://github.com/sbwml/luci-app-alist/trunk/alist package/alist
 # iStore
 svn co https://github.com/linkease/istore-ui/trunk/app-store-ui package/app-store-ui
 svn co https://github.com/linkease/istore/trunk/luci package/istore
+
 # 在线用户
 svn co https://github.com/haiibo/packages/trunk/luci-app-onliner package/luci-app-onliner
 sed -i '/bin\/sh/a\uci set nlbwmon.@nlbwmon[0].refresh_interval=2s' package/lean/default-settings/files/zzz-default-settings
@@ -120,6 +124,7 @@ sed -i 's/${g}.*/${a}${b}${c}${d}${e}${f}/g' package/lean/autocore/files/x86/aut
 date_version=$(date +"%y.%m.%d")
 orig_version=$(cat "package/lean/default-settings/files/zzz-default-settings" | grep DISTRIB_REVISION= | awk -F "'" '{print $2}')
 sed -i "s/${orig_version}/R${date_version} by Yumekai/g" package/lean/default-settings/files/zzz-default-settings
+
 # 修改 Makefile
 find package/*/ -maxdepth 2 -path "*/Makefile" | xargs -i sed -i 's/include\ \.\.\/\.\.\/luci\.mk/include \$(TOPDIR)\/feeds\/luci\/luci\.mk/g' {}
 find package/*/ -maxdepth 2 -path "*/Makefile" | xargs -i sed -i 's/include\ \.\.\/\.\.\/lang\/golang\/golang\-package\.mk/include \$(TOPDIR)\/feeds\/packages\/lang\/golang\/golang\-package\.mk/g' {}
